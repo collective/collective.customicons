@@ -15,7 +15,7 @@ If you want to help with the development (improvement, update, bug-fixing, ...)
 of ``collective.customicons`` this is a great idea!
 
 The code is located in the
-`github collective <https://github.com/collective/collective.customicons>`_.
+`github collective <https://github.com:collective/collective.customicons>`_.
 
 You can clone it or `get access to the github-collective
 <http://collective.github.com/>`_ and work directly on the project.
