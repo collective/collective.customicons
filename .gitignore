@@ -1,0 +1,15 @@
+*.pyc
+/bin
+/devsrc/
+/parts/
+/var/
+/src/
+*.egg-info/
+.mrsd
+/eggs/
+/develop-eggs/
+.*.cfg
+/coverage/
+/.project
+/.pydevproject
+/.settings/
