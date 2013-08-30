@@ -3,9 +3,9 @@
 /devsrc/
 /parts/
 /var/
-/src/
 *.egg-info/
 .mrsd
+dist/
 /eggs/
 /develop-eggs/
 .*.cfg

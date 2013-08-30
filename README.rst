@@ -8,6 +8,33 @@ Install it as an addon in Plone control-panel or portal_setup.
 
 This package is written for Plone 4.3 or later.
 
+
+Usage
+=====
+
+
+- With this product installed, you can specify an imagepool-folder via
+  the admin controlpanel. Inside this folder you put the images you want.
+  When you edit a folder you can either choose a customicon from the imagepool-
+  folder, or browse on your local machine for an image.
+
+- When there is an imagepool-image and an uploaded image simultaneously
+  specified for a folder, the the uploaded image will be taken and the
+  pool-image will be ignored.
+
+Archetypes
+----------
+- Nothing special
+
+Dexterity
+---------
+- To make this product work with dx, you need to enable the behavior for folders
+  via the dexterity-types admin controlpanel. Klick on the Folder type and under
+  the behaviors-tab you'll find the custom icon behavior.
+  Activate it and you're ready to go.
+
+
+
 Source Code and Contributions
 =============================
 
