@@ -1,0 +1,27 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:zcml="http://namespaces.zope.org/zcml"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:cmf="http://namespaces.zope.org/cmf"
+    i18n_domain="Plone">
+
+    <include zcml:condition="installed plone.dexterity" package=".dx" />
+    <include zcml:condition="installed archetypes.schemaextender" package=".at" />
+    
+    <adapter factory=".indexer.get_icon_index"        
+           name="getIcon" />
+           
+    <adapter factory=".indexer.get_tile_index"        
+           name="getTile" />  
+    
+    <!-- Control panel -->           
+    <include package="plone.app.registry" />
+
+    <browser:page
+        name="customicons-settings"
+        for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+        class=".controlpanel.CustomIconSettingsControlPanel"
+        permission="cmf.ManagePortal"
+        />                          
+</configure>

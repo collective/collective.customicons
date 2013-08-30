@@ -1,0 +1,31 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:zcml="http://namespaces.zope.org/zcml"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:cmf="http://namespaces.zope.org/cmf"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    i18n_domain="Plone">
+
+    <genericsetup:registerProfile
+            name="default"
+            title="Custom Icons (Archetypes)"
+            directory="profiles/default"
+            description="Enables configurable custom icons for Archetypes"
+            provides="Products.GenericSetup.interfaces.EXTENSION"
+    />
+   
+    <class class="plone.app.folder.folder.ATFolder">
+        <implements interface="collective.customicons.interfaces.ICustomIcon" />
+    </class> 
+    
+    <class class="Products.ATContentTypes.content.link.ATLink">
+        <implements interface="collective.customicons.interfaces.ICustomIcon" />
+    </class>  
+    
+    <adapter
+        for="collective.customicons.interfaces.ICustomIcon"
+        factory=".extender.IconExtender"
+        provides="archetypes.schemaextender.interfaces.IOrderableSchemaExtender"
+    />
+</configure>
