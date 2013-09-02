@@ -32,10 +32,19 @@ setup(name='collective.customicons',
       install_requires=[
             'setuptools',
             'Plone',
-            'archetypes.schemaextender',
-            'plone.app.contenttypes',
             'plone.app.registry',
       ],
+
+      extras_require={
+            'archetypes': [
+                'archetypes.schemaextender',
+
+            ],
+            'dexterity': [
+                'plone.app.dexterity',
+            ],
+      },
+
       entry_points="""
       [z3c.autoinclude.plugin]
       target = plone

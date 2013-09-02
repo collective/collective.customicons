@@ -24,10 +24,16 @@ Usage
 
 Archetypes
 ----------
-- Nothing special
+- If you want to use this addon together with archetypes depend your buildout
+  on ``collectice.customicons[archetypes]``
+
+- By default the schemaextender is activated for folder and link content types.
 
 Dexterity
 ---------
+- If you want to use this addon together with dexterity depend your buildout
+  on ``collectice.customicons[dexterity]``
+
 - To make this product work with dx, you need to enable the behavior for folders
   via the dexterity-types admin controlpanel. Klick on the Folder type and under
   the behaviors-tab you'll find the custom icon behavior.

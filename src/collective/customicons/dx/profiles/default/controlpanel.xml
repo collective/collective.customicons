@@ -6,7 +6,7 @@
     purge="False">
 
     <configlet
-        title="Settings for the collective.customicons Iconpool"
+        title="Custom Icons Settings"
         action_id="customicons"
         appId="collective.customicons"
         category="Products"

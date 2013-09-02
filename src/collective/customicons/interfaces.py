@@ -23,13 +23,13 @@ class ICustomIconSettings(Interface):
     """
 
     imagepool_path = schema.TextLine(
-        title=_(u"Imagepool Settings"),
-        description=_(u"Set the Customicons-Imagepool",
-        default=u"Enter the path to your Imagepool-folder."
-                 "For example, when you created a nested folder"
-                 "at the plone-siteroot,"
-                 "it would be: customicons/imagepool"
-                 "You can exclude the folder from the navigation, so it won't"
+        title=_(u"Path to Image-pool"),
+        description=_(u"Set the Custom Icons image-pool",
+        default=u"Enter the path to your Imagepool-folder. "
+                 "For example, when you created a folder "
+                 "at the plone-siteroot, "
+                 "it would be: imagepool "
+                 "You can exclude the folder from the navigation, so it won't "
                  "disturb your project."),
         required=False,
         default=u'',)
