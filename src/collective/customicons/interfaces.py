@@ -6,7 +6,7 @@ _ = MessageFactory('collective.customicons')
 
 
 class ICustomIcon(Interface):
-    """ 
+    """
     Marker for icon extensible classes.
     """
 

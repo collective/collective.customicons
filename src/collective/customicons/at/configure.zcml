@@ -8,11 +8,11 @@
     i18n_domain="Plone">
 
     <genericsetup:registerProfile
-            name="default"
-            title="Custom Icons (Archetypes)"
-            directory="profiles/default"
-            description="Enables configurable custom icons for Archetypes"
-            provides="Products.GenericSetup.interfaces.EXTENSION"
+        name="default"
+        title="Custom Icons (Archetypes)"
+        directory="profiles/default"
+        description="Enables configurable custom icons for Archetypes"
+        provides="Products.GenericSetup.interfaces.EXTENSION"
     />
    
     <class class="plone.app.folder.folder.ATFolder">

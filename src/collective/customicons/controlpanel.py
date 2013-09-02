@@ -11,9 +11,9 @@ class CustomIconSettingsEditForm(controlpanel.RegistryEditForm):
     def updateFields(self):
         super(CustomIconSettingsEditForm, self).updateFields()
 
-
     def updateWidgets(self):
         super(CustomIconSettingsEditForm, self).updateWidgets()
+
 
 class CustomIconSettingsControlPanel(controlpanel.ControlPanelFormWrapper):
     form = CustomIconSettingsEditForm

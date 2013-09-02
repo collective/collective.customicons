@@ -10,10 +10,10 @@
     <include zcml:condition="installed archetypes.schemaextender" package=".at" />
     
     <adapter factory=".indexer.get_icon_index"        
-           name="getIcon" />
+        name="getIcon" />
            
     <adapter factory=".indexer.get_tile_index"        
-           name="getTile" />  
+        name="getTile" />  
     
     <!-- Control panel -->           
     <include package="plone.app.registry" />

@@ -88,6 +88,3 @@ class IconExtender(object):
         for schemata in original.keys():
             neworder[schemata] = original[schemata]
         return neworder
-
-
-

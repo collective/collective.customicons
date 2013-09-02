@@ -6,6 +6,5 @@
 
     <property name="behaviors" purge="false">
         <element value="collective.customicons.dx.behavior.IDXCustomIcon"/>
-
     </property>
 </object>

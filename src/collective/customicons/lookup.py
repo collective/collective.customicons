@@ -19,10 +19,10 @@ def get_icon_folder(context):
             full_path = portal.unrestrictedTraverse(str(path))
             if full_path.contentIds() is not None:
                 return full_path
-        except: 
-            """Error you have no images in the Folder, 
+        except:
+            """Error you have no images in the Folder,
                or inserted a wrong lookup place"""
     return None
 
-#schoenerer fehlerabfang zb wenn im folder koane images drin sin, schoen ansagen.
+#schoenerer fehlerabfang zb wenn im folder koane images drin sin, schoen ansage
 # und wenn at und dx dann is bei at di edit view weg???

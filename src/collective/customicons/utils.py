@@ -13,7 +13,6 @@ def _get_imagepath(imgob, fieldname, scale):
     return '/'.join(relativepath)
 
 
-
 def _get_pool_image(ob, img_id):
     iconfolder = get_icon_folder(ob)
     if not img_id or iconfolder is None or img_id not in iconfolder.contentIds():

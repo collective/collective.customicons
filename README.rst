@@ -1,12 +1,12 @@
 Installation
 ============
 
-Just depend in your buildout on the egg ``collective.customicons``. ZCML is
-loaded automagically with z3c.autoinclude.
+- Just depend in your buildout on the egg ``collective.customicons``. ZCML is
+  loaded automagically with z3c.autoinclude.
 
-Install it as an addon in Plone control-panel or portal_setup.
+  Install it as an addon in Plone control-panel or portal_setup.
 
-This package is written for Plone 4.3 or later.
+  This package is written for Plone 4.3 or later.
 
 
 Usage
