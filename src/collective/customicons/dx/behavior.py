@@ -48,4 +48,6 @@ class IDXCustomIcon(model.Schema, ICustomIcon):
         vocabulary=u"customicons.vocabulary",
 
         required=False,
+
     )
+    form.fieldset('settings', fields=['iconimage', 'iconpool'])

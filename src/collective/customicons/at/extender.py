@@ -46,7 +46,7 @@ class IconExtender(object):
 
     fields = [
         ImageExtensionField('iconimage',
-            schemata='icon',
+            schemata='settings',
             mode="w",
             write_permission="Manage portal",
             required=False,
@@ -60,7 +60,7 @@ class IconExtender(object):
             ),
         ),
         StringExtensionField('iconpool',
-            schemata='icon',
+            schemata='settings',
             mode="w",
             write_permission="Manage portal",
             default='__empty__',

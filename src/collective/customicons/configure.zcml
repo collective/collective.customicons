@@ -2,11 +2,12 @@
     xmlns="http://namespaces.zope.org/zope"
     xmlns:zcml="http://namespaces.zope.org/zcml"
     xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
     xmlns:five="http://namespaces.zope.org/five"
     xmlns:cmf="http://namespaces.zope.org/cmf"
     i18n_domain="Plone">
 
-    <include zcml:condition="installed plone.dexterity" package=".dx" />
+    <include zcml:condition="installed plone.supermodel" package=".dx" />
     <include zcml:condition="installed archetypes.schemaextender" package=".at" />
     
     <adapter factory=".indexer.get_icon_index"        
@@ -23,5 +24,13 @@
         for="Products.CMFPlone.interfaces.IPloneSiteRoot"
         class=".controlpanel.CustomIconSettingsControlPanel"
         permission="cmf.ManagePortal"
-        />                          
+        />
+
+<genericsetup:registerProfile
+        name="default"
+        title="Custom Icons"
+        directory="profiles/default"
+        description="Enables configurable custom icons"
+        provides="Products.GenericSetup.interfaces.EXTENSION"
+    />                             
 </configure>

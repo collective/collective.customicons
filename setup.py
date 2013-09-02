@@ -41,7 +41,10 @@ setup(name='collective.customicons',
 
             ],
             'dexterity': [
-                'plone.app.dexterity',
+                'plone.supermodel',
+                'plone.namedfile',
+                'plone.autoform',
+                'plone.directives.form',
             ],
       },
 
